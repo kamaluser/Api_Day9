@@ -1,0 +1,222 @@
+2024-06-20 12:26:32.780 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-20 12:26:32.992 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-20 12:26:32.993 +04:00 [INF] Hosting environment: Development
+2024-06-20 12:26:32.994 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-20 12:26:33.027 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-20 12:26:33.401 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 244.5295 ms
+2024-06-20 12:26:33.409 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 385.5839ms
+2024-06-20 12:26:33.506 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-20 12:26:33.511 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.4082ms
+2024-06-20 12:26:33.560 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-20 12:26:33.612 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.8473ms
+2024-06-20 12:26:33.800 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-20 12:26:34.196 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 387.3719 ms
+2024-06-20 12:26:34.198 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 398.7684ms
+2024-06-20 12:26:49.742 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Auth/login - application/json; charset=utf-8 42
+2024-06-20 12:26:49.753 +04:00 [INF] Executing endpoint 'Course.API.Controllers.AuthController.Login (Course.API)'
+2024-06-20 12:26:49.774 +04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(Course.Service.Dtos.UserDtos.UserLoginDto) on controller Course.API.Controllers.AuthController (Course.API).
+2024-06-20 12:26:52.173 +04:00 [INF] Executed DbCommand (127ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[FullName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-20 12:26:52.480 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-06-20 12:26:52.514 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-20 12:26:52.522 +04:00 [INF] Executed action Course.API.Controllers.AuthController.Login (Course.API) in 2743.8049ms
+2024-06-20 12:26:52.523 +04:00 [INF] Executed endpoint 'Course.API.Controllers.AuthController.Login (Course.API)'
+2024-06-20 12:26:52.523 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 2775.4043 ms
+2024-06-20 12:26:52.532 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Auth/login - 200 null application/json; charset=utf-8 2790.0251ms
+2024-06-20 12:26:52.546 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/students?page=1&size=4 - null null
+2024-06-20 12:26:52.601 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.GetAll (Course.API)'
+2024-06-20 12:26:52.604 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-20 12:26:52.711 +04:00 [INF] GetAll request received
+2024-06-20 12:26:52.862 +04:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Students] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-20 12:26:52.880 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-20 12:26:52.880 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-20 12:26:52.921 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[GroupId], [t].[IsDeleted], [t].[ModifiedAt], [t].[Photo], [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+FROM (
+    SELECT [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+    FROM [Students] AS [s]
+    WHERE [s].[IsDeleted] = CAST(0 AS bit)
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Groups] AS [g] ON [t].[GroupId] = [g].[Id]
+2024-06-20 12:26:53.015 +04:00 [INF] Executing OkObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 12:26:53.023 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.GetAll (Course.API) in 418.438ms
+2024-06-20 12:26:53.023 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.GetAll (Course.API)'
+2024-06-20 12:26:53.023 +04:00 [INF] HTTP GET /api/students responded 200 in 427.4057 ms
+2024-06-20 12:26:53.024 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/students?page=1&size=4 - 200 null application/json; charset=utf-8 477.6597ms
+2024-06-20 12:26:56.056 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/groups - null null
+2024-06-20 12:26:56.061 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:26:56.064 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-20 12:26:56.067 +04:00 [INF] GetAll request processed successfully
+2024-06-20 12:26:56.101 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-20 12:26:56.107 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-20 12:26:56.108 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-20 12:26:56.184 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-20 12:26:56.198 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 12:26:56.208 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 143.4721ms
+2024-06-20 12:26:56.208 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:26:56.208 +04:00 [INF] HTTP GET /api/groups responded 200 in 149.5967 ms
+2024-06-20 12:26:56.209 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/groups - 200 null application/json; charset=utf-8 152.8429ms
+2024-06-20 12:27:15.031 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Students - multipart/form-data; boundary="4f941c73-1a88-400d-83f9-cb51a5859303" 31632
+2024-06-20 12:27:15.033 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-20 12:27:15.036 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-20 12:27:15.091 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-20 12:27:15.111 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 74.865ms
+2024-06-20 12:27:15.111 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-20 12:27:15.111 +04:00 [INF] HTTP POST /api/Students responded 400 in 79.2611 ms
+2024-06-20 12:27:15.112 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Students - 400 null application/problem+json; charset=utf-8 80.964ms
+2024-06-20 12:27:17.407 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/groups - null null
+2024-06-20 12:27:17.408 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:27:17.408 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-20 12:27:17.409 +04:00 [INF] GetAll request processed successfully
+2024-06-20 12:27:17.415 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-20 12:27:17.423 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-20 12:27:17.426 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 12:27:17.427 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 18.7182ms
+2024-06-20 12:27:17.427 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:27:17.427 +04:00 [INF] HTTP GET /api/groups responded 200 in 19.5954 ms
+2024-06-20 12:27:17.427 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/groups - 200 null application/json; charset=utf-8 20.6835ms
+2024-06-20 12:31:15.203 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-20 12:31:15.396 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-20 12:31:15.397 +04:00 [INF] Hosting environment: Development
+2024-06-20 12:31:15.397 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-20 12:31:15.421 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-20 12:31:15.602 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/groups - null null
+2024-06-20 12:31:15.674 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 145.3300 ms
+2024-06-20 12:31:15.680 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 261.2829ms
+2024-06-20 12:31:15.709 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-20 12:31:15.712 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:31:15.713 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.1738ms
+2024-06-20 12:31:15.722 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-20 12:31:15.736 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-20 12:31:15.758 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.1896ms
+2024-06-20 12:31:15.832 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-20 12:31:16.010 +04:00 [INF] GetAll request processed successfully
+2024-06-20 12:31:16.012 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 177.4848 ms
+2024-06-20 12:31:16.014 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 181.8285ms
+2024-06-20 12:31:17.495 +04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-20 12:31:17.530 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-20 12:31:17.531 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-20 12:31:17.658 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-20 12:31:17.770 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 12:31:17.789 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 2049.1179ms
+2024-06-20 12:31:17.789 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:31:17.789 +04:00 [INF] HTTP GET /api/groups responded 200 in 2093.2277 ms
+2024-06-20 12:31:17.798 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/groups - 200 null application/json; charset=utf-8 2195.548ms
+2024-06-20 12:31:33.824 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Students - multipart/form-data; boundary="ea64587d-05fc-47ba-819b-621c88078bd0" 78598
+2024-06-20 12:31:33.829 +04:00 [INF] Executing endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-20 12:31:33.833 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.API.Controllers.StudentsController (Course.API).
+2024-06-20 12:31:33.914 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-20 12:31:33.932 +04:00 [INF] Executed action Course.API.Controllers.StudentsController.Create (Course.API) in 98.0592ms
+2024-06-20 12:31:33.933 +04:00 [INF] Executed endpoint 'Course.API.Controllers.StudentsController.Create (Course.API)'
+2024-06-20 12:31:33.934 +04:00 [INF] HTTP POST /api/Students responded 400 in 107.0874 ms
+2024-06-20 12:31:33.938 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Students - 400 null application/problem+json; charset=utf-8 113.7241ms
+2024-06-20 12:31:37.330 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/groups - null null
+2024-06-20 12:31:37.332 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:31:37.333 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-20 12:31:37.334 +04:00 [INF] GetAll request processed successfully
+2024-06-20 12:31:37.396 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-20 12:31:37.402 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-20 12:31:37.405 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-20 12:31:37.406 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 73.3157ms
+2024-06-20 12:31:37.406 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-20 12:31:37.406 +04:00 [INF] HTTP GET /api/groups responded 200 in 75.5069 ms
+2024-06-20 12:31:37.407 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/groups - 200 null application/json; charset=utf-8 77.1804ms
+2024-06-20 12:40:20.179 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Students - null 0
+2024-06-20 12:40:20.279 +04:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '32', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(String input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode[T](String input, Int32 offset, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(String rawString, Int32 startIndex, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2024-06-20 12:40:20.354 +04:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2024-06-20 12:40:20.380 +04:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-06-20 12:40:20.401 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-06-20 12:40:20.402 +04:00 [INF] HTTP POST /api/Students responded 401 in 45.3907 ms
+2024-06-20 12:40:20.415 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Students - 401 null null 246.3692ms
+2024-06-20 12:42:09.241 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Students - multipart/form-data; boundary=--------------------------166332531308728344681068 236
+2024-06-20 12:42:09.243 +04:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'IDX10820: Invalid character found in Base64UrlEncoding. Character: '32', Encoding: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.')
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode(String input, Int32 offset, Int32 length, Byte[] output)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.Decode[T](String input, Int32 offset, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(String rawString, Int32 startIndex, Int32 length, Func`3 action)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2024-06-20 12:42:09.250 +04:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2024-06-20 12:42:09.251 +04:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-06-20 12:42:09.254 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-06-20 12:42:09.254 +04:00 [INF] HTTP POST /api/Students responded 401 in 2.7376 ms
+2024-06-20 12:42:09.255 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Students - 401 null null 14.3053ms

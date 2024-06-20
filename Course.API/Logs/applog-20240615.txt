@@ -1,0 +1,371 @@
+2024-06-15 23:43:36.008 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:43:36.170 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:43:36.171 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:43:36.171 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:43:36.193 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:43:36.417 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 140.3404 ms
+2024-06-15 23:43:36.423 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 231.4899ms
+2024-06-15 23:43:36.502 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:43:36.507 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.6794ms
+2024-06-15 23:43:36.514 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:43:36.554 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.9539ms
+2024-06-15 23:43:36.691 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:43:37.021 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 328.2107 ms
+2024-06-15 23:43:37.023 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 332.5371ms
+2024-06-15 23:46:07.307 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:46:07.420 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:46:07.421 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:46:07.421 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:46:07.436 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:46:07.436 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=1&size=2 - null null
+2024-06-15 23:46:07.530 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:46:07.545 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:46:07.606 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 121.0011 ms
+2024-06-15 23:46:07.611 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 177.0462ms
+2024-06-15 23:46:07.627 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:46:07.630 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.4619ms
+2024-06-15 23:46:07.674 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:46:07.708 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3266ms
+2024-06-15 23:46:07.843 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:46:07.858 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:46:07.871 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/favicon-32x32.png - null null
+2024-06-15 23:46:07.881 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-15 23:46:07.881 +04:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 9.5871 ms
+2024-06-15 23:46:07.882 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/favicon-32x32.png - 200 628 image/png 10.5504ms
+2024-06-15 23:46:08.044 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 183.4407 ms
+2024-06-15 23:46:08.046 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.4147ms
+2024-06-15 23:46:09.446 +04:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:46:09.488 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-15 23:46:09.489 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-15 23:46:09.642 +04:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:46:09.765 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:46:09.780 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 2231.0616ms
+2024-06-15 23:46:09.780 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:46:09.780 +04:00 [INF] HTTP GET /api/Groups responded 200 in 2296.8846 ms
+2024-06-15 23:46:09.793 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=1&size=2 - 200 null application/json; charset=utf-8 2358.6701ms
+2024-06-15 23:46:11.990 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=3&size=2 - null null
+2024-06-15 23:46:11.992 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:46:11.993 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:46:11.996 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:46:12.072 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:46:12.082 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:46:12.086 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:46:12.087 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 93.6156ms
+2024-06-15 23:46:12.087 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:46:12.087 +04:00 [INF] HTTP GET /api/Groups responded 200 in 94.7303 ms
+2024-06-15 23:46:12.087 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=3&size=2 - 200 null application/json; charset=utf-8 97.1256ms
+2024-06-15 23:48:07.757 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:48:07.879 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:48:07.879 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:48:07.879 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:48:07.895 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:48:08.072 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 113.3071 ms
+2024-06-15 23:48:08.077 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 183.3442ms
+2024-06-15 23:48:08.088 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:48:08.088 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:48:08.091 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.1095ms
+2024-06-15 23:48:08.163 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.7647ms
+2024-06-15 23:48:08.388 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:48:08.402 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 24
+2024-06-15 23:48:08.414 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:48:08.431 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:08.596 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 205.6337 ms
+2024-06-15 23:48:08.598 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 209.3642ms
+2024-06-15 23:48:08.714 +04:00 [INF] Create request received with No: P123
+2024-06-15 23:48:08.716 +04:00 [INF] Create method called with No: P123
+2024-06-15 23:48:10.107 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[@__dto_No_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Groups] AS [g]
+        WHERE [g].[No] = @__dto_No_0 AND [g].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-15 23:48:10.330 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 1) (DbType = Byte), @p3='?' (DbType = DateTime2), @p4='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Groups] ([CreatedAt], [IsDeleted], [Limit], [ModifiedAt], [No])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-15 23:48:10.349 +04:00 [INF] Group created with Id: 7
+2024-06-15 23:48:10.349 +04:00 [INF] Group created with Id: 7
+2024-06-15 23:48:10.353 +04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-15 23:48:10.361 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 1926.3184ms
+2024-06-15 23:48:10.361 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:48:10.362 +04:00 [INF] HTTP POST /api/Groups responded 201 in 1953.5085 ms
+2024-06-15 23:48:10.371 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 201 null application/json; charset=utf-8 1968.3809ms
+2024-06-15 23:48:10.406 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=1&size=2 - null null
+2024-06-15 23:48:10.408 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:10.411 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:10.420 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:48:10.536 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:48:10.554 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-15 23:48:10.555 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-15 23:48:10.678 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:48:10.736 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:48:10.744 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 332.8709ms
+2024-06-15 23:48:10.744 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:10.745 +04:00 [INF] HTTP GET /api/Groups responded 200 in 336.7006 ms
+2024-06-15 23:48:10.745 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=1&size=2 - 200 null application/json; charset=utf-8 338.8804ms
+2024-06-15 23:48:13.832 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=3&size=2 - null null
+2024-06-15 23:48:13.833 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:13.833 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:13.837 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:48:13.860 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:48:13.868 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:48:13.871 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:48:13.871 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 38.423ms
+2024-06-15 23:48:13.872 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:13.872 +04:00 [INF] HTTP GET /api/Groups responded 200 in 39.2551 ms
+2024-06-15 23:48:13.872 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=3&size=2 - 200 null application/json; charset=utf-8 40.409ms
+2024-06-15 23:48:26.313 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 25
+2024-06-15 23:48:26.314 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:48:26.314 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:26.318 +04:00 [INF] Create request received with No: PF131
+2024-06-15 23:48:26.318 +04:00 [INF] Create method called with No: PF131
+2024-06-15 23:48:26.328 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__dto_No_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Groups] AS [g]
+        WHERE [g].[No] = @__dto_No_0 AND [g].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-15 23:48:26.338 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 1) (DbType = Byte), @p3='?' (DbType = DateTime2), @p4='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Groups] ([CreatedAt], [IsDeleted], [Limit], [ModifiedAt], [No])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-15 23:48:26.339 +04:00 [INF] Group created with Id: 8
+2024-06-15 23:48:26.339 +04:00 [INF] Group created with Id: 8
+2024-06-15 23:48:26.339 +04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-15 23:48:26.340 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 25.9626ms
+2024-06-15 23:48:26.340 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:48:26.340 +04:00 [INF] HTTP POST /api/Groups responded 201 in 26.8408 ms
+2024-06-15 23:48:26.341 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 201 null application/json; charset=utf-8 27.9031ms
+2024-06-15 23:48:26.359 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=1&size=2 - null null
+2024-06-15 23:48:26.360 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:26.360 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:26.361 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:48:26.368 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:48:26.379 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:48:26.381 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:48:26.383 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 23.1512ms
+2024-06-15 23:48:26.384 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:26.384 +04:00 [INF] HTTP GET /api/Groups responded 200 in 24.3147 ms
+2024-06-15 23:48:26.384 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=1&size=2 - 200 null application/json; charset=utf-8 25.2637ms
+2024-06-15 23:48:27.457 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=2&size=2 - null null
+2024-06-15 23:48:27.458 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:27.458 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:27.459 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:48:27.471 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:48:27.476 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-15 23:48:27.476 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-15 23:48:27.513 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:48:27.514 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:48:27.515 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 56.5419ms
+2024-06-15 23:48:27.515 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:27.515 +04:00 [INF] HTTP GET /api/Groups responded 200 in 57.6200 ms
+2024-06-15 23:48:27.516 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=2&size=2 - 200 null application/json; charset=utf-8 58.4399ms
+2024-06-15 23:48:28.019 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:44392/api/Groups?page=4&size=2 - null null
+2024-06-15 23:48:28.020 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:28.020 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.PaginatedList`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll(System.String, Int32, Int32) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:48:28.021 +04:00 [INF] GetAll request processed successfully
+2024-06-15 23:48:28.026 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Groups] AS [g]
+2024-06-15 23:48:28.035 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreatedAt], [s].[Email], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt], [s].[Photo]
+FROM (
+    SELECT [g].[Id], [g].[CreatedAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-15 23:48:28.035 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.PaginatedList`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-15 23:48:28.036 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.GetAll (Course.API) in 16.0208ms
+2024-06-15 23:48:28.036 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.GetAll (Course.API)'
+2024-06-15 23:48:28.037 +04:00 [INF] HTTP GET /api/Groups responded 200 in 16.6327 ms
+2024-06-15 23:48:28.037 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:44392/api/Groups?page=4&size=2 - 200 null application/json; charset=utf-8 17.4741ms
+2024-06-15 23:49:23.237 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 21
+2024-06-15 23:49:23.238 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:49:23.238 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:49:23.260 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-15 23:49:23.279 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 40.2515ms
+2024-06-15 23:49:23.279 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:49:23.279 +04:00 [INF] HTTP POST /api/Groups responded 400 in 41.0080 ms
+2024-06-15 23:49:23.279 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 400 null application/problem+json; charset=utf-8 42.2469ms
+2024-06-15 23:50:30.741 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:50:30.862 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:50:30.862 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:50:30.862 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:50:30.882 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:50:31.107 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 150.1126 ms
+2024-06-15 23:50:31.112 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 231.5088ms
+2024-06-15 23:50:31.120 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:50:31.120 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:50:31.124 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.8528ms
+2024-06-15 23:50:31.153 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7153ms
+2024-06-15 23:50:31.277 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:50:31.536 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 257.3150 ms
+2024-06-15 23:50:31.538 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 261.1533ms
+2024-06-15 23:50:35.092 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 21
+2024-06-15 23:50:35.104 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:50:35.120 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:50:35.384 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-15 23:50:35.405 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 280.2208ms
+2024-06-15 23:50:35.405 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:50:35.406 +04:00 [INF] HTTP POST /api/Groups responded 400 in 306.4134 ms
+2024-06-15 23:50:35.407 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 400 null application/problem+json; charset=utf-8 314.8766ms
+2024-06-15 23:54:53.093 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:54:53.224 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:54:53.225 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:54:53.225 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:54:53.243 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:54:53.440 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 116.8657 ms
+2024-06-15 23:54:53.445 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 203.6289ms
+2024-06-15 23:54:53.448 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:54:53.448 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:54:53.450 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.76ms
+2024-06-15 23:54:53.476 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.0812ms
+2024-06-15 23:54:53.685 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:54:53.878 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 190.2290 ms
+2024-06-15 23:54:53.879 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.8951ms
+2024-06-15 23:56:33.225 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:56:33.359 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:56:33.360 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:56:33.360 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:56:33.381 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:56:33.589 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 122.8643 ms
+2024-06-15 23:56:33.595 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 215.685ms
+2024-06-15 23:56:33.597 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:56:33.597 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:56:33.601 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.7617ms
+2024-06-15 23:56:33.632 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.5357ms
+2024-06-15 23:56:33.762 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:56:34.020 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 255.8171 ms
+2024-06-15 23:56:34.021 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.1523ms
+2024-06-15 23:56:42.650 +04:00 [INF] User profile is available. Using 'C:\Users\kamal\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-15 23:56:42.782 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-15 23:56:42.783 +04:00 [INF] Hosting environment: Development
+2024-06-15 23:56:42.783 +04:00 [INF] Content root path: C:\Users\kamal\Desktop\CourseApp\Course.API
+2024-06-15 23:56:42.801 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:56:42.894 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 21
+2024-06-15 23:56:42.931 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:56:42.950 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:56:43.022 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 150.5534 ms
+2024-06-15 23:56:43.026 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 227.2229ms
+2024-06-15 23:56:43.029 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:56:43.029 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:56:43.032 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.4094ms
+2024-06-15 23:56:43.061 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.0316ms
+2024-06-15 23:56:43.140 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:56:43.270 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-15 23:56:43.288 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 334.2599ms
+2024-06-15 23:56:43.288 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:56:43.288 +04:00 [INF] HTTP POST /api/Groups responded 400 in 387.5576 ms
+2024-06-15 23:56:43.290 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 400 null application/problem+json; charset=utf-8 396.714ms
+2024-06-15 23:56:43.334 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 190.3230 ms
+2024-06-15 23:56:43.335 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.3397ms
+2024-06-15 23:56:54.482 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 20
+2024-06-15 23:56:54.485 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:56:54.485 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:56:54.498 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-15 23:56:54.500 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 14.1745ms
+2024-06-15 23:56:54.500 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:56:54.500 +04:00 [INF] HTTP POST /api/Groups responded 400 in 15.9393 ms
+2024-06-15 23:56:54.501 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 400 null application/problem+json; charset=utf-8 18.9717ms
+2024-06-15 23:57:55.240 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/index.html - null null
+2024-06-15 23:57:55.263 +04:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.2996 ms
+2024-06-15 23:57:55.263 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/index.html - 200 null text/html;charset=utf-8 23.708ms
+2024-06-15 23:57:55.285 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:57:55.285 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:57:55.287 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 1.8272ms
+2024-06-15 23:57:55.304 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.7473ms
+2024-06-15 23:57:55.415 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:57:55.445 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 30.0216 ms
+2024-06-15 23:57:55.446 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.0051ms
+2024-06-15 23:58:53.567 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-15 23:58:53.569 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 1.744ms
+2024-06-15 23:58:53.611 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - null null
+2024-06-15 23:58:53.626 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.6606ms
+2024-06-15 23:58:53.886 +04:00 [INF] Request starting HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - null null
+2024-06-15 23:58:53.912 +04:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 24.8987 ms
+2024-06-15 23:58:53.913 +04:00 [INF] Request finished HTTP/2 GET https://localhost:44392/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.3216ms
+2024-06-15 23:58:59.262 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:44392/api/Groups - application/json; charset=utf-8 20
+2024-06-15 23:58:59.263 +04:00 [INF] Executing endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:58:59.263 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.API.Controllers.GroupsController (Course.API).
+2024-06-15 23:58:59.272 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-15 23:58:59.273 +04:00 [INF] Executed action Course.API.Controllers.GroupsController.Create (Course.API) in 9.7896ms
+2024-06-15 23:58:59.274 +04:00 [INF] Executed endpoint 'Course.API.Controllers.GroupsController.Create (Course.API)'
+2024-06-15 23:58:59.274 +04:00 [INF] HTTP POST /api/Groups responded 400 in 11.0770 ms
+2024-06-15 23:58:59.274 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:44392/api/Groups - 400 null application/problem+json; charset=utf-8 12.6502ms

@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kamal\\Desktop\\CourseApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{546DD9D3-65EF-4931-AB51-2DB45A7CBAD2}|CourseApp.UI\\CourseApp.UI.csproj|c:\\users\\kamal\\desktop\\courseapp\\courseapp.ui\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{546DD9D3-65EF-4931-AB51-2DB45A7CBAD2}|CourseApp.UI\\CourseApp.UI.csproj|solutionrelative:courseapp.ui\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{546DD9D3-65EF-4931-AB51-2DB45A7CBAD2}|CourseApp.UI\\CourseApp.UI.csproj|c:\\users\\kamal\\desktop\\courseapp\\courseapp.ui\\filters\\authfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{546DD9D3-65EF-4931-AB51-2DB45A7CBAD2}|CourseApp.UI\\CourseApp.UI.csproj|solutionrelative:courseapp.ui\\filters\\authfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 222,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthFilter.cs",
+              "DocumentMoniker": "C:\\Users\\kamal\\Desktop\\CourseApp\\CourseApp.UI\\Filters\\AuthFilter.cs",
+              "RelativeDocumentMoniker": "CourseApp.UI\\Filters\\AuthFilter.cs",
+              "ToolTip": "C:\\Users\\kamal\\Desktop\\CourseApp\\CourseApp.UI\\Filters\\AuthFilter.cs",
+              "RelativeToolTip": "CourseApp.UI\\Filters\\AuthFilter.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:52:12.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\kamal\\Desktop\\CourseApp\\CourseApp.UI\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "CourseApp.UI\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\kamal\\Desktop\\CourseApp\\CourseApp.UI\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "CourseApp.UI\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAGAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:45:32.673Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 222,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
